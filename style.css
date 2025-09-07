@@ -72,25 +72,11 @@ p { max-width: 60ch; }
 .couple-stack .primary-name.bride { font-size:clamp(2.2rem,5vw,3.4rem); }
 .couple-stack .primary-name.groom { font-size:clamp(2.05rem,4.8vw,3.2rem); }
 .couple-stack .relation { font-size:.95rem; font-weight:500; letter-spacing:.05em; text-transform:none; color:var(--text-soft); }
-.weds-divider { position:relative; font-family:'Playfair Display',serif; font-style:italic; font-weight:600; font-size:clamp(1.1rem,2.4vw,1.6rem); letter-spacing:.15em; text-transform:uppercase; color:var(--text); padding:.85rem 1.75rem .75rem; margin:.35rem 0 .25rem; }
-.weds-divider:before, .weds-divider:after { content:""; position:absolute; top:50%; width:130px; max-width:22vw; height:1px; background:linear-gradient(90deg, rgba(183,138,98,.1), rgba(212,163,115,.55), rgba(183,138,98,.1)); }
-.weds-divider:before { left: -140px; transform:translateY(-50%); }
-.weds-divider:after { right: -140px; transform:translateY(-50%); }
+.couple-stack .weds-word { font-family:'Playfair Display', serif; font-style:italic; font-weight:600; font-size:1.25rem; letter-spacing:.18em; text-transform:uppercase; color:var(--text); margin:.3rem 0 .2rem; background:none; }
 @media (max-width:680px){
   .couple-stack { gap:.45rem; }
   .couple-stack .relation { font-size:.9rem; line-height:1.3; }
-  .weds-divider:before, .weds-divider:after { width:80px; left:auto; right:auto; }
-  .weds-divider { padding:.65rem 1.1rem .55rem; }
-}
-/* Further refine the weds divider for small devices to prevent line overlap */
-@media (max-width:560px){
-  .weds-divider { padding:.55rem .9rem .45rem; }
-  .weds-divider:before, .weds-divider:after { width:56px; }
-}
-/* On very narrow phones just hide the side lines to avoid visual collision */
-@media (max-width:440px){
-  .weds-divider:before, .weds-divider:after { display:none; }
-  .weds-divider { padding:.4rem .75rem .35rem; letter-spacing:.18em; }
+  .couple-stack .weds-word { font-size:1.1rem; letter-spacing:.22em; }
 }
 @media (max-width: 760px) {
   .couple-line { font-size: clamp(1.35rem, 5.2vw, 2.05rem); }
