@@ -137,13 +137,6 @@ p { max-width: 60ch; }
 
 /* RSVP */
 
-/* Gallery */
-.gallery-section { background: var(--bg-soft); }
-.gallery-grid { --min: 210px; display: grid; gap: 1.35rem; grid-template-columns: repeat(auto-fill, minmax(var(--min), 1fr)); max-width: 1080px; margin: 0 auto; }
-.gallery-item { background: var(--bg-alt); padding: .6rem .6rem .95rem; border-radius: 24px; border: 1px solid var(--border); position: relative; box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; gap: .75rem; }
-.gallery-item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 18px; background: #eee; filter: saturate(.9) contrast(1.05); transition: transform .8s ease; }
-.gallery-item:hover img { transform: scale(1.04); }
-.gallery-item figcaption { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; font-weight: 600; color: var(--text-soft); text-align: center; }
 
 /* Footer */
 .site-footer { text-align: center; padding: 3.5rem 1rem 3rem; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--text-soft); background: linear-gradient(180deg, rgba(247,236,239,.6), rgba(255,255,255,.7)); margin-top: 2rem; }
@@ -167,6 +160,11 @@ input:focus-visible, textarea:focus-visible, select:focus-visible { outline: non
 .ganesha-emblem img { width:100%; height:auto; filter: drop-shadow(0 4px 10px rgba(194,155,102,.18)); }
 @media (prefers-reduced-motion: reduce) { .ganesha-emblem { animation:none; } }
 @keyframes emblemFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* Couple photo in hero */
+.couple-photo { margin: 1.2rem auto 1.6rem; max-width: 340px; border-radius: 30px; overflow:hidden; position:relative; box-shadow:0 10px 28px -8px rgba(60,40,30,.18), 0 4px 14px -4px rgba(60,40,30,.12); }
+.couple-photo img { width:100%; height:auto; display:block; object-fit:cover; aspect-ratio: 4/5; filter:saturate(.98) contrast(1.04); transition: transform 1.2s ease; }
+.couple-photo:hover img { transform: scale(1.03); }
 
 /* Responsive tweaks */
 @media (max-width: 680px) {
