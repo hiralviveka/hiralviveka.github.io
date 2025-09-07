@@ -82,6 +82,16 @@ p { max-width: 60ch; }
   .weds-divider:before, .weds-divider:after { width:80px; left:auto; right:auto; }
   .weds-divider { padding:.65rem 1.1rem .55rem; }
 }
+/* Further refine the weds divider for small devices to prevent line overlap */
+@media (max-width:560px){
+  .weds-divider { padding:.55rem .9rem .45rem; }
+  .weds-divider:before, .weds-divider:after { width:56px; }
+}
+/* On very narrow phones just hide the side lines to avoid visual collision */
+@media (max-width:440px){
+  .weds-divider:before, .weds-divider:after { display:none; }
+  .weds-divider { padding:.4rem .75rem .35rem; letter-spacing:.18em; }
+}
 @media (max-width: 760px) {
   .couple-line { font-size: clamp(1.35rem, 5.2vw, 2.05rem); }
   .couple-line .relation { display: block; margin: .15rem 0 .35rem; }
