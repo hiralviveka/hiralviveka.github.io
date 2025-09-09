@@ -114,11 +114,11 @@ p { max-width: 60ch; }
 .event-card.sangeet h3 { color:#7a3fa3; }
 .event-card.sangeet .event-intro { color:#5b2f78; }
 .event-card.sangeet .event-meta { color:#8856b1; }
-.event-card.pherras { background: linear-gradient(135deg, #fff4ed 0%, #ffe9df 40%, #ffe1d5 68%, #fdd9cc 100%); border-color:#f3c4b1; }
-.event-card.pherras:before { background: linear-gradient(135deg, rgba(255,140,80,.28), rgba(255,190,165,.28)); }
-.event-card.pherras h3 { color:#b55327; }
-.event-card.pherras .event-intro { color:#863a14; }
-.event-card.pherras .event-meta { color:#c1683d; }
+.event-card.pheras { background: linear-gradient(135deg, #fff4ed 0%, #ffe9df 40%, #ffe1d5 68%, #fdd9cc 100%); border-color:#f3c4b1; }
+.event-card.pheras:before { background: linear-gradient(135deg, rgba(255,140,80,.28), rgba(255,190,165,.28)); }
+.event-card.pheras h3 { color:#b55327; }
+.event-card.pheras .event-intro { color:#863a14; }
+.event-card.pheras .event-meta { color:#c1683d; }
 .event-card.sangeet { background: linear-gradient(135deg, #f9f0ff 0%, #f4e5ff 45%, #efe0ff 70%, #e8d6fa 100%); border-color:#dbc4f0; }
 .event-card.sangeet:before { background: linear-gradient(135deg, rgba(183,132,255,.28), rgba(233,188,210,.25)); }
 .event-card.sangeet h3 { color:#7a3fa3; }
